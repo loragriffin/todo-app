@@ -2,6 +2,7 @@ var express = require('express');
 
 var app = express();
 
+// temporary - will replace with database
 
 app.set('view engine', 'hbs');
 
@@ -10,15 +11,22 @@ app.use('/static', express.static('public'));
 app.get('/', function(request, response) {
   response.redirect('/todos');
 });
+
 app.get('/todos', function (request, response) {
-    response.send('');
+  response.render('main')
 });
+
 app.get('/todos/add', function (request, response) {
-    response.send('');
+
 });
+
 app.get('/todo/done/:id', function (request, response) {
-    response.send('');
+
 });
+
+app.post('/todo' function (request, response) {
+
+})
 
 
 app.listen(8000, function() {
