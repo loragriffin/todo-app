@@ -1,6 +1,9 @@
 # To Do App
 
-Simple to do app designed using:
+## About
+Simple to do app using Node.js
+
+## Built With
   - Node.js
   - Express
   - Handlebars
